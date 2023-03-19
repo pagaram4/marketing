@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name=" 레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #33c;
+        stroke-miterlimit: 10;
+        stroke-width: 55px;
+      }
+
+      .cls-2, .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        fill: #33c;
+        font-family: Arial-BoldMT, Arial;
+        font-size: 714px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="540" cy="540" r="493.43"/>
+  <g class="cls-2">
+    <text class="cls-3" transform="translate(440.81 806.88)"><tspan x="0" y="0">i</tspan></text>
+  </g>
+</svg>
