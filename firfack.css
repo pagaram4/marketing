@@ -240,6 +240,10 @@ dialog{
     outline: 0;
 }
 
+.h2{
+    font-family: SUIT-Regular;
+}
+
 .noma{
     text-decoration: none;
 }
