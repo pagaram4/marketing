@@ -206,7 +206,7 @@ dialog{
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25) , 0 14px 28px rgba(0, 0, 0, 0.25);
 }
 
-.imshh2{
+.imsh{
     margin-top: 0;
 }
 
@@ -240,14 +240,13 @@ dialog{
     outline: 0;
 }
 
-h2{
-    font-family: SUIT-Regular;
-}
-
 .noma{
     text-decoration: none;
 }
 
+h2{
+    font-family: SUIT-Regular;
+}
 
 @font-face {
     font-family: 'SUIT-Regular';
