@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./firfack.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-------------- 헤드 -------------->
+    <div class="head">
+        <img class="maim fl" src="./img/logo.svg">
+        <div class="he fl">위조 모바일 민증 만들기</div>
+    </div>
+
+    <!-------------- 본문1 ----------------->
+
+    <img src="./img/tor.jpg" class="torimg">
+
+    <div class="infotor" onclick="showMsg()">
+        <img class="infoimg fl" src="./img/info.svg"><div class="infotxt fl">더보기</div>
+    </div>
+    
+    <!-------------- 본문2 ----------------->
+    
+    <img src="./img/dawn.svg" class="dawnimg">
+    
+    <div class="infodawn" onclick="showMsg2()">
+        <img class="infoimgdawn fl" src="./img/info.svg"><div class="infotxtdawn fl">더보기</div>
+    </div>
+    
+    <!----------------- 모달창 ----------------->
+    
+    <dialog class="mydialog">
+        <!-- 안드로이드 토르 -->
+        <a href="https://play.google.com/store/apps/details?id=org.torproject.torbrowser&pli=1" class="spea">
+            <img class="diaimg fl" src="./img/안드로이드.svg"><div class="diatxt fl">토르 브라우저 다운</div>
+        </a> <br>
+        <!-- 애플 ios 토르 -->
+        <a href="https://apps.apple.com/kr/app/tor-browser-ornet-onion-vpn/id1177964608" class="spea">
+            <img class="diaimg fl" src="./img/애플.png"><div class="diatxt fl">토르 브라우저 다운</div>
+        </a> <br>
+        <!-- 글자 복사 -->
+        <img class="diaimg fl" src="./img/linkcv.svg" onclick="txtcopy()"><div class="diatxt fl" onclick="txtcopy()">링크복사하기</div>
+        <br>
+        
+        <br><input type="button" class="mButton" onclick="closeMsg()" value=" 닫 기 " >
+        <img src="./img/info.svg" class="diainfo" onclick="tutodia()">
+    </dialog>
+
+    <!-- 튜토리얼 이미지 모달 -->
+    <dialog class="tutodia">
+        <img src="./img/tuto.png" class="tutoimg"> <br>
+        <h2>토르 브라우저를 사용하는 방법은 보안성이 강력하며
+            토르브라우저의 주소입력창에 복사한 링크를 붙여넣고 사용하십시오
+        </h2>
+        <input type="button" class="backbtn" onclick="back()" value=" 확 인 " >
+    </dialog>
+
+    <!-- 다운로드 튜토리얼 모달 -->
+    <dialog class="dawndia">
+        <h2 class="imshh2">
+            HTMl 파일을 사용하기 때문에 간편하며
+            토르 브라우저가 아닌 타 브라우저를 사용해도 무방하고
+            사용 브라우저의 창 최대화(전체화면)을 활성화하고 사용하십시오
+        </h2>
+        <a href="./cheak.html" download="sdsdsdsd.html" class="noma"><input type="button" class="dawnbtn" value="DAWNLOD"></a> <br>
+        <input type="button" class="mButton2" onclick="closeMsg2()" value=" 닫 기 ">
+    </dialog>
+    
+    <!---------------------------------------------------------------
+    ------------------------------- main1 ---------------------------
+    ----------------------------------------------------------------->
+
+    <div class="title spetit">
+        실제같은 인터페이스
+    </div>
+    <div class="son">
+        실제 페이지와 분간가지않는 완벽한 인터페이스 구현<br>
+        타이머,QR다시 표시,상세정보 심지어 QR이 인식되었을때<br>
+        이동하는 페이지까지 구현하였습니다.<div class="br"></div>
+    </div>
+
+    <img src="./img/전체1.png" class="img">
+
+    <a class="qrlink" href="file:///C:/Users/SAMSUNG/Desktop/fake/cheak.html">QR인식 화면 보러가기</a>
+
+    <!---------------------------------------------------------------
+    ------------------------------- main2 ---------------------------
+    ----------------------------------------------------------------->
+
+    <div class="title">
+        개인정보 걱정없이<br>이용하세요
+    </div>
+    <div class="son">
+        실제 개인정보가아닌 희망 정보를 입력하기 때문에<br>
+        개인정보가 유출되지 않으며 안전한 토르 브라우저를<br>
+        사용하기 때문에 기타 위험에서 부터도 안전합니다.</div>
+    </div>
+
+    <img src="./img/초록체크방패.png" class="img">
+
+
+
+    <!-------------- 본문1 ----------------->
+    <img src="./img/tor.jpg" class="torimg">
+    <div class="infotor" onclick="showMsg()">
+        <img class="infoimg fl" src="./img/info.svg"><div class="infotxt fl">더보기</div>
+    </div>
+        
+    <!-------------- 본문2 ----------------->
+        
+    <img src="./img/dawn.svg" class="dawnimg">
+        
+    <div class="infodawn" onclick="showMsg2()">
+        <img class="infoimgdawn fl" src="./img/info.svg"><div class="infotxtdawn fl">더보기</div>
+    </div>
+    <div class="margin"></div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        function showMsg(){
+			let dialog1 = document.querySelector('.mydialog');
+			dialog1.showModal();
+            $('body').css('overflow' , 'hidden')
+		}
+		
+		function closeMsg(){
+            let dialog1 = document.querySelector('.mydialog');
+			dialog1.close();
+            $('body').css('overflow' , 'scroll')
+		}
+		
+		function tutodia(){
+            let dialog1 = document.querySelector('.mydialog');
+			dialog1.close();
+
+            let tutodia = document.querySelector('.tutodia');
+			tutodia.showModal();
+		}
+
+        function back(){
+            let back = document.querySelector('.tutodia');
+			back.close();
+
+            let dialog1 = document.querySelector('.mydialog');
+			dialog1.showModal();
+		}
+
+        // 글자복사
+        function txtcopy(){ 
+            let inputTag = '복사링크';
+            navigator.clipboard.writeText(inputTag).then(res=>{
+              alert("텍스트가 복사되었습니다");
+          })
+        }
+
+        //두번쨰 모달창
+        function showMsg2(){
+			let dialog2 = document.querySelector('.dawndia');
+			dialog2.showModal();
+            $('body').css('overflow' , 'hidden')
+		}
+
+        function closeMsg2(){
+            let dialog2 = document.querySelector('.dawndia');
+			dialog2.close();
+            $('body').css('overflow' , 'scroll')
+		}
+
+        function dawnlod() {
+            alert('a')
+        }
+	</script>
+
+</body>
+</html>
